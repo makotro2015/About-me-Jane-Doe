@@ -1,0 +1,320 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/montserrat */
+@import "http://fonts.fontstorage.com/import/montserrat.css";
+/*
+	Montserrat, 100, 100 italic, 200, 200 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
+*/
+/*общие*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  color: #000000;
+  font-size: 1.25vw;
+}
+
+h1 {
+  font-size: 3.89vw;
+  font-weight: 800;
+  line-height: 5vw;
+}
+
+h2 {
+  font-size: 2.77vw;
+  font-weight: 800;
+  line-height: 5vw;
+}
+
+h3 {
+  font-size: 1.88vw;
+  font-weight: 800;
+  line-height: 2.5vw;
+  margin-bottom: 1.66vw; /* исправить*/
+}
+
+/* header */
+header {
+  box-sizing: 100%;
+  background-color: #f8f3ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6vw 12.22vw 1.5vw 4.44vw;
+}
+
+.header nav {
+  align-self: center;
+}
+
+.header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #8d43ed;
+}
+
+.header nav a:hover {
+  color: #cfaff8;
+  transition: transform 0.1s;
+  transform: scale(1.1);
+}
+
+.header nav a:active {
+  color: #5d00d6;
+}
+
+.header nav a:not(:last-child) {
+  margin-right: 2.22vw;
+}
+
+/* main */
+main {
+  background-color: #f8f3ff;
+}
+
+.section-main {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-top-left-radius: 11vw;
+  border-bottom-right-radius: 11vw;
+  background-clip: border-box;
+ 
+  
+ 
+}
+
+main .rect-foto {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main {
+  display: flex;
+  gap: 2.22vw;
+  padding: 5vw 12.22vw 5vw 4.44vw;
+}
+
+.main .main-foto {
+  width: 36.66vw;
+  
+}
+
+.main .personal-information {
+  width: 44.44vw;
+}
+
+.main .personal-information .name {
+  margin-bottom: 1.66vw;
+}
+
+.main .personal-information .base-data {
+  margin-bottom: 4.44vw;
+}
+
+.main .personal-information .base-data > span {
+  margin-right: 2.22vw;
+  font-size: 1.11vw;
+  line-height: 1.46vw;
+}
+.main .personal-information .base-data .violet {
+  font-weight: bold;
+  color: #aa7ecd;
+  margin-right: 0.55vw;
+}
+
+.main .personal-information .base-data .black {
+  font-weight: 500;
+  color: #303030;
+}
+
+/* form */
+
+.section-form {
+  height: 52vw;
+  background-color: #F8F3FF;
+  background-image: url("img/form-left-rect.svg"), url("img/form-right-rect.svg");
+  background-size: 23.47vw;
+  background-position: left, right;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+.section-form h2 {
+  margin-top: 3.88vw;
+  margin-left: 4.44vw;
+}
+
+form {
+  margin-left: 4.44vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5.76vw 5.76vw 7.22vw 5.76vw 5.76vw;
+  gap: 2.22vw 2.77vw;
+}
+
+label {
+  display: flex; 
+  flex-direction: column;
+  color: #303030;
+  size: 1vw;
+  line-height: 1.31vw;
+}
+
+label.name {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+label.gender {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+label.country {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+label.city {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+label.birth {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+fieldset {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #fff;
+  border-radius: 0.83vw;
+  border: 2px dashed #D9BBFF;
+}
+
+input[type="file"] {
+  grid-column: 3/4;
+  align-self: center;
+}
+
+input, select {
+height: 3.88vw;
+margin-top: 0.55vw;
+border: 1px solid #8E43ED;
+box-sizing: border-box;
+border-radius: 0.83vw;
+padding-left: 0.81vw;
+padding-right: 0.81vw;
+color: #303030;
+}
+ 
+
+input[type="submit"] {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+/* slider */
+.section-slider {
+  position: relative;
+}
+
+.slider-h1 {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+}
+
+
+.slider-p {
+  position: absolute;
+  top: 55%;
+  left: 28.5vw;
+  z-index: 2;
+  width: 40.27vw;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.22vw;
+  height: auto;
+  color: rgb(255, 255, 255);
+}
+
+.arrow-left {
+  position: absolute;
+  width: 1.5vw;
+  bottom: 17vw;
+  left: 7vw;
+  
+}
+
+.arrow-right {
+  position: absolute;
+  width: 1.5vw;
+  bottom: 17vw;
+  right: 7vw;
+  
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider .slider-controls {
+  position: absolute;
+  z-index: 2;
+  bottom: 3vw;
+  left: 45vw;
+}
+.slider .slider-controls label {
+  display: inline-block;
+  width: 0.83vw;
+  height: 0.83vw;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.slider .slider-controls label:not(:last-child) {
+  margin: 0 0.83vw 0 0;
+}
+
+#btn-foto1:checked ~ .slider-controls label[for="btn-foto1"],
+#btn-foto2:checked ~ .slider-controls label[for="btn-foto2"],
+#btn-foto3:checked ~ .slider-controls label[for="btn-foto3"] {
+  background-color: #fff;
+}
+
+.slider .slider-inner {
+  width: 90vw;
+  margin: 5vw 4.6vw;
+  overflow: hidden;
+}
+
+.slider .slider-inner .slider-slides {
+  width: 270vw;
+  
+}
+
+#btn-foto1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-foto2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-90vw);
+}
+
+#btn-foto3:checked ~ .slider-inner .slider-slides {
+  transform: translate(-180vw);
+}
+
+.slider .slider-inner .slider-slides img {
+  float: left;
+  width: 90vw;
+  border-radius: 32px;
+}

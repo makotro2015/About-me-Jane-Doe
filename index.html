@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About yourself</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img class="logo" src="img/logo.svg" />
+        <nav>
+          <a href="#">Jane Doe</a>
+          <a href="#">Tell us about yourself</a>
+          <a href="#">Slider</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-main">
+        <img class="rect-foto" src="img/rect-foto.svg" alt="" />
+        <div class="main">
+          <img class="main-foto" src="img/foto.png" alt="Фотография" />
+          <div class="personal-information">
+            <h1 class="name">Jane Doe</h1>
+            <p class="base-data">
+              <span>
+                <span class="violet">Date of birth</span>
+                <span class="black">21.04.2001</span>
+              </span>
+              <span>
+                <span class="violet">Gender</span>
+                <span class="black">Female</span>
+              </span>
+              <span>
+                <span class="violet">Country</span>
+                <span class="black">Corea</span>
+              </span>
+            </p>
+
+            <h3>About me</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-form">
+        <h2>Tell us about yourself</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <label class="name">
+            Your name
+            <input
+              type="text"
+              name="name"
+              placeholder="Tell us your name"
+              required
+            />
+          </label>
+          <label class="gender">
+            Your gender
+            <select name="gender" placeholder="Choose your gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </label>
+          <label class="country">
+            Your country
+            <input
+              type="text"
+              name="country"
+              placeholder="Where are yur from?"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <label class="city">
+            Your city
+            <input
+              type="text"
+              name="city"
+              placeholder="Your native city"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <label class="birth">
+            Your date of birth
+            <input type="date" name="birth" required />
+          </label>
+          <fieldset>
+            <input type="file" name="document" value="Add document" />
+          </fieldset>
+          <input type="submit" name="send-form" value="Send info" />
+        </form>
+      </section>
+      <section class="section-slider">
+        <h1 class="slider-h1">Slide this photo</h1>
+        <p class="slider-p">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur
+        </p>
+
+        <div class="slider">
+          <input type="radio" id="btn-foto1" name="toggle" checked />
+          <input type="radio" id="btn-foto2" name="toggle" />
+          <input type="radio" id="btn-foto3" name="toggle" />
+          <div class="slider-controls">
+            <label for="btn-foto1"></label>
+            <label for="btn-foto2"></label>
+            <label for="btn-foto3"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <img src="img/see.png" alt="See" />
+              <img src="img/forest.png" alt="Forest" />
+              <img src="img/scale.png" alt="Scale" />
+            </div>
+          </div>
+        </div>
+        <img class="arrow-left" src="img/arrow-left.svg" alt="" />
+        <img class="arrow-right" src="img/arrow-right.svg" alt="" />
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
