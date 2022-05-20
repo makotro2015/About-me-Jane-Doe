@@ -43,6 +43,10 @@ header {
   padding: 1.6vw 12.22vw 1.5vw 4.44vw;
 }
 
+.header .logo {
+  width: 14vw;
+}
+
 .header nav {
   align-self: center;
 }
@@ -87,7 +91,8 @@ main {
 main .rect-foto {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 0; 
+  width: 18vw;
 }
 
 .main {
